@@ -9,7 +9,7 @@ Once it is clear what needs to be considered in the {term}`reliability predictio
 (meca_9_5_1)=
 ## Categories and combinations of mechanical failure mechanisms
 
-The method selection for mechanical parts reliability modelling modelling should always take basis in a good understanding of the failure mechanisms that are of relevance for the considered item, especially the predominant ones. To simplify the presentation in the following paragraphs, mechanical failure mechanisms are grouped into five distinct categories listed in {numref}`meca-table4-4`.
+The method selection for mechanical parts reliability modelling should always take basis in a good understanding of the failure mechanisms that are of relevance for the considered item, especially the predominant ones. To simplify the presentation in the following paragraphs, mechanical failure mechanisms are grouped into five distinct categories listed in {numref}`meca-table4-4`.
 
 ```{list-table} Categories of mechanical failure mechanisms
 :name: meca-table4-4
@@ -62,7 +62,7 @@ The approach for method selection presented in the following is centred around t
 The third column of {numref}`meca-table4_6` gives an indication about the relevance of each part type for different classes of mechanical systems introduced in  {numref}`meca-table4-3`. As has been discussed in {numref}`meca_9_4`, it can be sufficient to focus on those parts that dominate system level reliability. In the same way, the reliability of a specific part is often dominated by a single (or very few) failure mechanism(s), allowing to focus the analysis especially with methods that are based on the PoF. 
 Which failure mechanism(s) dominates reliability depends not only on the part type, but also on the application, e.g. a spring is likely to fail differently when used with static, cyclic or dynamic loading. The “predominant” failure mechanisms listed in {numref}`meca-table4_6` should therefore be considered only as a first guidance.
 
-The remaining columns of {numref}`meca-table4_6`provide recommendations on the modelling of the selected parts and failure mechanisms. The focus is on the methods making reference to the PoF, in particular Structural reliability methods as outlined in {numref}`meca_9_6` and {numref}`meca_9_7`. 
+The remaining columns of {numref}`meca-table4_6` provide recommendations on the modelling of the selected parts and failure mechanisms. The focus is on the methods making reference to the PoF, in particular Structural reliability methods as outlined in {numref}`meca_9_6` and {numref}`meca_9_7`. 
 
 The application of the handbook approaches is restricted to selected parts, allowing the possible use of the {term}`NSWC` handbook {cite:p}`mec-NSWC-11` as a scaling method (which is based the {term}`physics of failure <Physics of failure>`) to adapt statistical estimates based on data samples that are more relevant for space applications than the {term}`NSWC` data, see {numref}`meca_9_3_1_5` for discussion. The {term}`NPRD` Handbook {cite:p}`mec-NPRD-16` is not considered any further. 
 
@@ -223,7 +223,7 @@ Also, a combined approach with Bayesian updating of a prior derived from the PoF
 		<tr>
 			<td>Mirrors and lenses</td>
 			<td>A piece of glass or similar material designed to reflect (mirror), or to concentrate or disperse light rays.</td>
-			<td>IV Structural</td>
+			<td>III Structural</td>
 			<td>Fracture</td>
 			<td>Structural reliability methods</td>
 			<td>
@@ -298,7 +298,7 @@ Also, a combined approach with Bayesian updating of a prior derived from the PoF
 			<td>
 				<p>I Active</p>
 				<p>II Passive</p>
-				<p>III Fluidic</p>
+				<p>IV Fluidic</p>
 			</td>
 			<td>Wear, degradation, installation damage</td>
 			<td>NSWC adjusted, Statistical methods or Structural reliability methods</td>
@@ -326,7 +326,7 @@ Also, a combined approach with Bayesian updating of a prior derived from the PoF
 			<td>Structural component (ind.threaded fasteners,inserts, brackets)</td>
 			<td>A mechanical component designed to sustain loads or pressures, provide stiffness or stability, or
 				provide support or containment.</td>
-			<td>IV Structural</td>
+			<td>III Structural</td>
 			<td>Fracture</td>
 			<td>Structural reliability methods</td>
 			<td>
@@ -362,5 +362,5 @@ Reliability prediction for assemblies of mechanical parts can either be made bot
 :class: note
 The NSWC Handbook {cite:p}`mec-NSWC-11` contains models also for some items that are better considered as assemblies rather than parts, including e.g. electric motors, solenoids and transducers. 
 
-For reasons already discussed in {numref}`meca_9_3_1_5`, , the direct use of these models is not recommended for space applications.
+For reasons already discussed in {numref}`meca_9_3_1_5`, the direct use of these models is not recommended for space applications.
 
