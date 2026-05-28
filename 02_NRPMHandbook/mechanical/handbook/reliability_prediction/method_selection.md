@@ -80,7 +80,7 @@ Also, a combined approach with Bayesian updating of a prior derived from the PoF
 			<tr class="db-header">
 				<th colspan="5"></th>
 				<th colspan="3">Structural reliability methods</th>
-				<th colspan="2">NSWG 2011 handbook</th>
+				<th colspan="2">NSWC 2011 handbook</th>
 			</tr>
 			<tr class="db-header">
 				<th>Part type</th>
