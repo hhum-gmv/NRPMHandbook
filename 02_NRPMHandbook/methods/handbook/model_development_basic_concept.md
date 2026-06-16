@@ -22,7 +22,7 @@ The probability that the system or component does not fail and performs its inte
 :class: equation
 ```{math}
 :label: Equation_method_5_1
-R_{T}\left( t \right) = P\left\lbrack T > t \right\rbrack = 1 - \int_{0}^{t}{f_{T}\left( t \right)\mathrm{d}t} = 1 - F_{T}\left( t \right) = \mathrm{\exp}\left( - \int_{0}^{t}{\lambda\left( x \right)\text{dx}} \right)
+R_{T}\left( t \right) = P\left\lbrack T > t \right\rbrack = 1 - \int_{0}^{t}{f_{T}\left( \tau \right)\mathrm{d}\tau} = 1 - F_{T}\left( t \right) = \mathrm{\exp}\left( - \int_{0}^{t}{\lambda\left( \tau \right)\mathrm{d}\tau} \right)
 ```
 ````
 
@@ -39,7 +39,7 @@ The probability that a failure occurs and the system or component cannot perform
 :class: equation
 ```{math}
 :label: Equation_method_5_2
-F_{T}\left( t \right) = P\left\lbrack T \leq t \right\rbrack = \int_{0}^{t}{f_{T}\left( t \right)\mathrm{d}t} = 1 - R_{T}\left( t \right) = 1 - \mathrm{\exp}\left( - \int_{0}^{t}{\lambda\left( x \right)\mathrm{d}x} \right)
+F_{T}\left( t \right) = P\left\lbrack T \leq t \right\rbrack = \int_{0}^{t}{f_{T}\left( \tau \right)\mathrm{d}\tau} = 1 - R_{T}\left( t \right) = 1 - \mathrm{\exp}\left( - \int_{0}^{t}{\lambda\left( \tau \right)\mathrm{d}\tau} \right)
 ```
 ````
 
@@ -255,7 +255,7 @@ There are a number of existing handbook data sources available that either prese
 
 Knowing and managing the failure mechanisms within parts or systems is generally a good starting point to perform a reliability prediction. From a practical point of view, it becomes even more interesting when no other data are available to perform the reliability prediction of a part, a unit or a subsystem, and the last resort for the reliability engineer is to analyse the failure mechanisms of the item under consideration.
 
-The first step is to identify potential failure modes and associated failure mechanisms, e.g. by performing a Design or Process FMEA (see {numref} `mis_7_4_3` of {ref}`Part 5 - MIS <sec_misc_handbook>` of this handbook), or through engineering judgment and/or lessons learnt. The following steps will then consist in determining reliability data linked to the phenomenon identified as most likely responsible for the undesired failure mode. The approach used for analysing in depth the failure mechanisms is the {term}`Physics of Failures <Physics of failure>` (PoF), see {numref}`method_5_5` for details.
+The first step is to identify potential failure modes and associated failure mechanisms, e.g. by performing a Design or Process FMEA (see {numref}`misc_10_3` of {ref}`Part 5 - MIS <sec_misc_handbook>` of this handbook), or through engineering judgment and/or lessons learnt. The following steps will then consist in determining reliability data linked to the phenomenon identified as most likely responsible for the undesired failure mode. The approach used for analysing in depth the failure mechanisms is the {term}`Physics of Failures <Physics of failure>` (PoF), see {numref}`method_5_5` for details.
 
 
 (method_5_2_6)=
@@ -353,7 +353,7 @@ Each of the three modelling steps listed above will be briefly discussed below.
 Before starting a statistical analysis, the relevant characteristics of the available data sample need to be understood. As a minimum, the following aspects and questions have to be considered:
 
 -   **Data representativeness:** *Is the sample representative for the technology and application?*  
--   **Failure characteristics:** *Which failures (root causes, failure mechanisms are included?*  
+-   **Failure characteristics:** *Which failures (root causes, failure mechanisms) are included?*  
 -   **Acceleration:** *What was the rationale behind acceleration factors applied in testing (if any)?*  
 -   **Sample homogeneity:** *Is the sample homogeneous, or merged from different populations?*  
 -   **Time related aspects:** *Which phases in an item's life are considered by the data?*  

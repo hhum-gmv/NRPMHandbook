@@ -1202,5 +1202,4 @@ The following aspects should be considered:
 It is important to note that the probability of success of safe disposal should be demonstrated already during the design phase as part of the space debris mitigation requirements. The analysis for safe disposal is then reassessed if the lifetime in-orbit is completed and should be further extended if a failure occurred during the lifetime. That means the requirements for safe disposal determine to what extent a lifetime extension is possible.
 
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">

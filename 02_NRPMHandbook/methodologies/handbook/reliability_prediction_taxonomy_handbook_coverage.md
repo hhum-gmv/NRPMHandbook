@@ -175,15 +175,11 @@ At each level of assembly, different types of elements can be used as part of th
 
 * **EEE component**
 
-    It is defined as a non-electronics part, i.e. a part that does not perform any EEE function.
-
-At equipment level, a mechanical unit (or mechanism) is assembled of mechanical parts and possibly some EEE components to support the specified functions. Also, structural elements are considered as mechanical items.
+   A {term}`EEE` component performs an electrical, electronic or electromechanical function. At equipment level, an electrical unit is considered as a set of {term}`EEE parts <EEE part>` assembled in a single package with structure, boards, wires and connectors to support the specified functions.
 
 * **Mechanical part**
 
-    It is defined as a non-electronics part, i.e. a part that does not perform any EEE function. 
-
-At equipment level, a mechanical unit (or mechanism) is assembled of mechanical parts and possibly some EEE components to support the specified functions. Also, structural elements are considered as mechanical items.
+    It is defined as a non-electronics part, i.e. a part that does not perform any EEE function. At equipment level, a mechanical unit (or mechanism) is assembled of mechanical parts and possibly some EEE components to support the specified functions. Also, structural elements are considered as mechanical items.
 
 * **Miscellaneous item**
 
