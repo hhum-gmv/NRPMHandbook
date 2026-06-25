@@ -25,12 +25,6 @@ Despite its late appearance in the preference listing given above, a good unders
 
 
 (meca_9_3_1_1)=
-### Analysis of the {term}`failure mechanism <Failure mechanism>`
-
-A first analysis and understanding of the potential failure mechanisms for mechanical parts and equipment should generally be available from the design process and should always be considered as an important input for the prediction, even if a pure statistical approach is used to estimate an item’s reliability. The approach described in {numref}`meca_9_4` and {numref}`meca_9_5` is based on this idea, focussing on the identification of relevant failure mechanisms although not necessarily requiring PoF methods for the mathematical modelling.
-
-
-(meca_9_3_1_2)=
 ### {term}`In-orbit return (IOR) data <In-orbit return (IOR) data>`
 
 IOR failure data provides valuable information on the in-service reliability performance in space applications. For mechanical equipment, it can in certain cases be possible to track the failure cause down to part level, making the information even more valuable. However, the use of in-orbit return data for reliability prediction is hindered by the small degree of standardization of mechanical items (compared to {term}`EEE`) and the large effect of the design details and the operational conditions on mechanical part reliability. As a stand-alone input, it will thus be restricted to highly standardized applications. Apart from this, in-orbit return can provide the following information when combined with other inputs:
@@ -40,7 +34,7 @@ IOR failure data provides valuable information on the in-service reliability per
 * Failure/success data to update a model based on other inputs.
 
 
-(meca_9_3_1_3)=
+(meca_9_3_1_2)=
 ### Manufacturer reliability data
 
 Mechanical space equipment suppliers are highly specialized companies, delivering their products for many different missions. Manufacturer reliability data can thus be a highly relevant source of information for mechanical reliability prediction. This holds especially for standardized items with a long space heritage, where manufacturer’s IOR (considered in {numref}`meca_9_3_1_2`) can be used for the reliability prediction. Also {term}`test data <Test data>` available on the manufacturer’s side may be considered. Manufacturer reliability data derived from analysis should be checked for consistency with the methodology presented in this handbook.
@@ -48,7 +42,7 @@ Mechanical space equipment suppliers are highly specialized companies, deliverin
 Apart from this, more general manufacturer data, such as design information, material specifications, or equipment level Failure Mode and Effects Analysis  {term}`FMEA` analyses are also important inputs for reliability predictions of mechanical parts. 
 
 
-(meca_9_3_1_4)=
+(meca_9_3_1_3)=
 ### Test data
 
 Test data for mechanical parts tested at operational conditions would be a relevant source of information for reliability prediction but is in most cases not available in large enough quantities. Small data samples can be used to calibrate or update models derived from analysis, or to check the modelling assumptions.
@@ -61,6 +55,13 @@ Finally, one specific feature of pre-flight acceptance tests should be mentioned
 :class: note
 This “proof load” approach is only valid for failure mechanisms resulting from peak load effects and cannot be applied when cumulative stresses are driving failure. More details on the use of proof load test results for reliability prediction can be found, e.g. in {cite:p}`mec-AO-1-8017-14-NL-KM`, {cite:p}`mec-Venter2012AccountingFP`.
 ```
+
+
+(meca_9_3_1_4)=
+### Analysis of the {term}`failure mechanism <Failure mechanism>`
+
+A first analysis and understanding of the potential failure mechanisms for mechanical parts and equipment should generally be available from the design process and should always be considered as an important input for the prediction, even if a pure statistical approach is used to estimate an item’s reliability. The approach described in {numref}`meca_9_4` and {numref}`meca_9_5` is based on this idea, focussing on the identification of relevant failure mechanisms although not necessarily requiring PoF methods for the mathematical modelling.
+
 
 (meca_9_3_1_5)=
 ### Models from existing data sources
@@ -107,7 +108,7 @@ The advantage of this approach is the increased flexibility, as generic models f
 
 As a result, the NSWC should not be used as a data source for mechanical reliability prediction in space applications. The data can only be used to derive “ballpark” estimates, e.g. for early design phases, for comparison with other methods, or as a prior for {term}`Bayesian inference <Bayesian inference>` updating. 
 
-Beyond this, the NSWCmethod is recommended only as a scaling method for specific part types, allowing to tune statistical estimates from “space relevant” data sources (the NSWC base failure rates should not be used). ). The approach is applicable only if the failure mechanisms that are of relevance in space applications are the same as those considered by the NSWC models, see {numref}`meca_9_5_2` for guidance. 
+Beyond this, the NSWC method is recommended only as a scaling method for specific part types, allowing to tune statistical estimates from “space relevant” data sources (the NSWC base failure rates should not be used). The approach is applicable only if the failure mechanisms that are of relevance in space applications are the same as those considered by the NSWC models, see {numref}`meca_9_5_2` for guidance. 
 
 It is based on the following steps:
 
@@ -174,4 +175,4 @@ The use of existing reliability handbooks and data sources, especially as a stan
 
 (meca_9_3_2_4)=
 ### Combined approach
-Bayesian updating is the recommended method for combining different sources of information for mechanical reliability prediction with independent statistical data. The specific case of Bayesian up-dating for reliability estimates derived with structural reliability methods, using failure data collected e.g. in part level testing, is discussed in {numref}`meca_9_6_5`.However, Bayesian statistics as discussed in {ref}`Part 2 - Methods <methods>` of this handbook are applicable also more generally, e.g. to update preliminary estimates based on handbook data or expert elicitation.
+Bayesian updating is the recommended method for combining different sources of information for mechanical reliability prediction with independent statistical data. The specific case of Bayesian up-dating for reliability estimates derived with structural reliability methods, using failure data collected e.g. in part level testing, is discussed in {numref}`meca_9_6_5`. However, Bayesian statistics as discussed in {ref}`Part 2 - Methods <methods>` of this handbook are applicable also more generally, e.g. to update preliminary estimates based on handbook data or expert elicitation.
