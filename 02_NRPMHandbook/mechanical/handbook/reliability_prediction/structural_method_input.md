@@ -3,7 +3,7 @@
 (meca_9_6)=
 # Structural reliability methods and inputs
 
-In the following, the use of different methods based on structural reliability theory are briefly dis-cussed in the context of mechanical {term}`reliability prediction <Reliability prediction>` ({numref}`meca_9_6_1` to {numref}`meca_9_6_3`):
+In the following, the use of different methods based on structural reliability theory are briefly discussed in the context of mechanical {term}`reliability prediction <Reliability prediction>` ({numref}`meca_9_6_1` to {numref}`meca_9_6_3`):
 
 * General {term}`structural reliability methods <Structural reliability method>`, as introduced in {ref}`Part 2 - Methods <methods>`,
 * Simplified structural reliability methods, with analytic solutions for the probability of failure,
@@ -13,7 +13,7 @@ Finally, {numref}`meca_9_6_4` discusses the probabilistic modelling of random va
 
 
 (meca_9_6_1)=
-## Simplified structural reliability methods for mechanical reliability prediction
+## General structural reliability methods for mechanical reliability prediction
 
 The general principles of structural reliability prediction methods are discussed in {ref}`Part 2 - Methods <methods>` of this handbook. Applying these methods to mechanical reliability prediction requires going through the following steps:
 
