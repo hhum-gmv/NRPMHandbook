@@ -138,7 +138,7 @@ Problems that cannot be reduced to a two-variable problem can be handled using t
 
 The modelling of the two basic variables generally has to account for time dependency. In the simplest case, without strength degradation, the resistance $X_{1}$ can be considered as time invariant. A time variant load $X_{2}(t)$ can then be transformed into a time invariant random variable by taking the maximum load $X_{2}^{max} = max(X_{2}(t))$ during a specified time period, e.g. the highest load experienced during launch. The probabilistic modelling for the maximum load should then be based on extreme value theory (e.g. by fitting a random variable distribution to the maxima of a random process). More complex cases with time variant strength (e.g.degradation effects) and/or cumulative loading (e.g. fatigue loads) require dedicated considerations using time variant structural reliability methods reliability. In the remainder of this paragraph, these applications will not be discussed any further, the focus will be on time invariant reliability calculations.
 
-Time invariant reliability problems, i.e. problems without the need to consider time dependency of $X_{1}$ and $X_{2}$ during the reliability calculations can generally be solved using one of the methods discussed in {ref}`Part 2 - Methods <methods>` (e.g. {term}`FORM` / term}`SORM`, Monte Carlo simulations). Analytic solutions are available for the following simple distributional assumptions:
+Time invariant reliability problems, i.e. problems without the need to consider time dependency of $X_{1}$ and $X_{2}$ during the reliability calculations can generally be solved using one of the methods discussed in {ref}`Part 2 - Methods <methods>` (e.g. {term}`FORM` / {term}`SORM`, Monte Carlo simulations). Analytic solutions are available for the following simple distributional assumptions:
 
 * Both strength $X_{1}$ and stress $X_{2}$ are approximated by a normal distribution,
 * Both strength $X_{1}$ and stress $X_{2}$ are approximated a lognormal distribution,
@@ -309,7 +309,7 @@ The coefficients of variation have been derived, and traditionally been used, as
     - <p>12%</p><p>Skin CoV*</p>
 *   - Equipment inserts
     - <p>Strength with respect to axial loading</p><p>Strength with respect to. in plane loading</p>
-    - <p>16%</p><p>Skin CoV*<\p>
+    - <p>16%</p><p>Skin CoV*</p>
 ```
 
 ```{admonition} Note
@@ -338,7 +338,7 @@ Loads typically vary as a function of time. The dependency on time can be either
   
 Practical reliability problems generally involve several load and resistance variables that should be described by their joint probability distribution function (possibly including dependencies) if several loads are interacting for the same failure mechanism. 
 
-A pragmatic approach to handle the challenges listed above is to take the limit loads used in deterministic design as an upper fractile value with corresponding exceedance probability (e.g. 1% at a 90% confidence level for limit loads defined statistically in consistency with {cite:p}`mec-ECSS-E-ST-32C`). TTogether with a rough estimate for the CoV of the stress distribution, this information can be used to derive the distribution parameters of any two-parameter model.
+A pragmatic approach to handle the challenges listed above is to take the limit loads used in deterministic design as an upper fractile value with corresponding exceedance probability (e.g. 1% at a 90% confidence level for limit loads defined statistically in consistency with {cite:p}`mec-ECSS-E-ST-32C`). Together with a rough estimate for the CoV of the stress distribution, this information can be used to derive the distribution parameters of any two-parameter model.
 
 Distributional assumptions should nevertheless be backed by an engineering understanding of the load analysis process. To give an example, random vibration loads can be assumed to follow a normal distribution when looking at the instantaneous (point-in-time) distribution of the random process. Assuming a linear response of the spacecraft structure, this assumption is still valid for the point-in-time distribution of the response spectrum. However, the peak response during a certain load event follows a Rayleigh distribution, or an extreme value distribution with parameters depending on the duration of the random vibration {cite:p}`mec-peak-response`. ]. It should be noted that also the exceedance probability of a “three sigma” peak response, often used as limit load for design purposes, depends on the duration of the loading, and cannot be derived directly from the normal distribution.
 
