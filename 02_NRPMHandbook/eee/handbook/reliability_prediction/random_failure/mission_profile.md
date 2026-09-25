@@ -40,7 +40,7 @@ At that early stage, the definition of this preliminary mission profile can be b
 
 -   A mission profile for comparison purpose based on examples provided in {ref}`eee_annex_a` (A.2.11), to use with precautions with regard to the user’s actual use conditions).
 
-WWith the development of the project, thermal simulations are made available by thermal architects and should be used as the basis for the mission profile determination, as much as possible without considering the margins. 
+With the development of the project, thermal simulations are made available by thermal architects and should be used as the basis for the mission profile determination, as much as possible without considering the margins. 
 
 So, to define accurately the mission profile, it is necessary to know:
 
@@ -195,7 +195,7 @@ The temperature variations at satellite level can be due to:
 
 -   The position of the satellite in front of the Sun or in the eclipse of the Earth, depending on the season.
 
-TTo define the different parameters of temperature cycling, it is suggested to define a thermograph for each phase of the mission profile. This thermograph is a direct interpretation of the thermal analysis and simulation done during the preliminary design of the satellite by considering the different phases of the mission profile. The temperature is oscillating around the reference temperature of each electronic board.
+To define the different parameters of temperature cycling, it is suggested to define a thermograph for each phase of the mission profile. This thermograph is a direct interpretation of the thermal analysis and simulation done during the preliminary design of the satellite by considering the different phases of the mission profile. The temperature is oscillating around the reference temperature of each electronic board.
 
 A cycle usually corresponds to a temperature excursion measured compared to the reference temperature of the electronic board, and the cycle time is applicable until returning to the initial temperature. This temperature cycle corresponds to an identified phenomenon that generates stress. 
 
@@ -222,7 +222,7 @@ And,
 
 $$T_{max_{cycling}} \leq +125^\circ C$$
 
-With a thermal transition rate inferior or equal (\leq) to 20°C.
+With a thermal transition rate inferior or equal ($$\leq$$) to 20°C.
 
 
 (eee_8_3_2_6)=
